@@ -1,6 +1,15 @@
 // Module Name: FullAdder
 // Structural Flow Code
 
+module HalfAdder(sum, c_out, A, B);
+    output sum;
+    output c_out;
+    input A;
+    input B;
+    xor(sum, A, B);
+    and(c_out, A, B);
+endmodule
+
 module FullAdder(sum, c_out, i1, i2,c_in);
     output sum;
     output c_out;
